@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">SumasMachineLearning</string>
+    <string name="prediction">Prediccion</string>
+    <string name="probability">Probabilidad</string>
+    <string name="timecost">Tiempo</string>
+    <string name="timecost_value">%1$d ms</string>
+    <string name="empty">--</string>
+    <string name="detect">Detectar</string>
+    <string name="clear">Limpiar</string>
+    <string name="please_write_a_digit">Dibuja un numero en el recuadro</string>
+    <string name="failed_to_create_classifier">Error al crear el clasificador</string>
+
+    <string name="informacion">El juego usa Machine Learning con la base de datos MNIST que esta formada de
+    muchos digitos escritos a mano y con el machine learnig podemos procesar estas imagenes.\n\n
+
+        El juego es simple, aparecerá una pantalla donde saldrán una operacion matematica que tendrás que resolver
+        dibujando en el cuadro del centro.\nCuando termines de dibujar el digito tienes que dar al boton resolver y
+        si lo que quieres es quitar lo que has dibujado solo tienes que pulsar en limpiar.\n\n
+
+        Al pulsar sobre el boton resolver, el número que has dibujado se procesara comparandolas con el modelo de
+        machine learnning comentado anteriormente y compara para obtener el resultado.\n\n
+
+        Los resultados que se obtienen son:\n\n
+        - El número que has escrito\n\n
+        - La probabilidad que había de que fuera el nuero acertado (Se puede traducir en lo bien o mal que se ha dibujado el número)\n\n
+        - El tiempo que se ha tardado en procesar el número dibujado\n\n
+
+        Las operaciones matemáticas que aparecen en cada nivel serán cada ves mas difícil hasta que las completes todas.\n\n
+        El jugador gana cuando complete todas las operaciones matemáticas.\n
+        El jugador pierde cuando se termine el tiempo.
+    </string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="tab">\u0009</string>
+</resources>

@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".Juego_new"
+    android:background="@drawable/juego">
+
+    <TableLayout
+        android:layout_width="389dp"
+        android:layout_height="wrap_content">
+        <TableRow>
+            <TextView
+                android:id="@+id/nivel"
+                style="@style/ResultText"
+                android:layout_width="101dp"
+                android:gravity="center"
+                android:textColor="@android:color/white" />
+        </TableRow>
+        <TableRow>
+
+            <TextView
+                android:id="@+id/highscoretext"
+                style="@style/ResultText"
+
+                android:layout_width="101dp"
+                android:gravity="left"
+                android:textColor="@android:color/white" />
+
+
+            <TextView
+                android:id="@+id/score"
+                style="@style/ResultText"
+
+                android:layout_width="wrap_content"
+                android:gravity="center"
+                android:textColor="@android:color/white" />
+
+        </TableRow>
+    </TableLayout>
+    <TextView
+        android:id="@+id/Operacion"
+        android:layout_width="244dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="3dp"
+        android:fontFamily="casual"
+        android:gravity="center_horizontal"
+        android:text="Operacion matematica"
+        android:textColor="@android:color/white"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/Comprobacion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:visibility="invisible"
+        android:textAlignment="center"
+        android:textColor="@android:color/white"/>
+
+    <com.nex3z.fingerpaintview.FingerPaintView
+        android:id="@+id/fpv_paint"
+        android:layout_width="301dp"
+        android:layout_height="280dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="16dp"
+        android:foreground="@drawable/shape_rect_border" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_detect"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:text="Calcular"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"/>
+
+        <Button
+            android:id="@+id/btn_clear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:layout_weight="1"
+            android:text="@string/clear"/>
+
+    </LinearLayout>
+
+    <TableLayout
+        android:layout_width="389dp"
+        android:layout_height="wrap_content">
+
+        <TextView
+            style="@style/ResultText"
+            android:text="Machine Learning Resultados"
+            android:textStyle="bold"
+            android:textColor="@android:color/white"/>
+
+        <TextView
+            style="@style/ResultText"
+            android:text="@string/prediction"
+            android:textColor="@android:color/white"/>
+
+        <TextView
+            android:id="@+id/tv_prediction"
+            style="@style/ResultText"
+            android:text="@string/empty"
+            android:textColor="@android:color/white"
+            android:textSize="24sp"
+            tools:text="1"
+            />
+
+        <TableRow>
+
+            <TextView
+                style="@style/ResultText"
+                android:text="@string/probability"
+                android:textColor="@android:color/white"/>
+
+            <TextView
+                style="@style/ResultText"
+                android:text="@string/timecost"
+                android:textColor="@android:color/white"/>
+
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:id="@+id/tv_probability"
+                style="@style/ResultText"
+                android:text="@string/empty"
+                android:textColor="@android:color/white"
+                tools:text="0.9" />
+
+
+            <TextView
+                android:id="@+id/tv_timecost"
+                style="@style/ResultText"
+                android:text="@string/empty"
+                android:textColor="@android:color/white"
+                tools:text="10ms" />
+
+        </TableRow>
+
+    </TableLayout>
+
+</LinearLayout>
