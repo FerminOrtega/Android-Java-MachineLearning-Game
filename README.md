@@ -10,3 +10,7 @@ El programa es una App para Android desarrollada con Java
 
 Estas son algunas imágenes de la app:
 
+<img src="Imagenes/00.png" width="210"><img src="Imagenes/01.png" width="210"><img src="Imagenes/03.png" width="210">
+
+<img src="Imagenes/04.png" width="210"><img src="Imagenes/05.png" width="210">
+
